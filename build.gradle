@@ -1,0 +1,18 @@
+buildscript {
+    repositories { jcenter() }
+    dependencies { classpath 'com.netflix.nebula:nebula-plugin-plugin:2.+' }
+}
+
+description 'Copy files to S3 using CopySpec'
+apply plugin: 'nebula-plugin'
+
+contacts {
+    'jryan@netflix.com' {
+        moniker 'Justin Ryan'
+        github 'quidryan'
+    }
+}
+
+dependencies {
+    testCompile 'com.netflix.nebula:nebula-test:2.+'
+}
